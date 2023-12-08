@@ -1,16 +1,9 @@
-version: 2.2.1
+version: 2.1.7
 integrations:
-  type: UCD
-  attributes:
-    auto-config: true
-    env-mapping:
-      dev: DEV
-      qa: QA
-      integration: UAT
-      prod: PROD
-  configs:
-    name: UCD2
-    tenantId: 5ade13625558f2c6688d15ce
-    token: a62854ba-f9a6-4b69-a897-ae4a42a46929
-    ucdProxyConfig: null
-    ucdUrl: https://10.134.119.198:8443/
+  - type: ucv-ext-launch
+    configs:
+      name: Launch Integration
+      baseUrl: https://10.134.119.250:8443
+      ucvAccessKey: 599a4dce-676c-4cae-a394-4d9600663781
+      launchToken: c7d5c70d-0d0e-4f1c-b3c7-d53df4af29a4
+      loggingLevel: DEBUG
